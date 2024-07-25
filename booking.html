@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./booking.css">
+    <script defer src="./booking.js"></script>
+    <link rel="stylesheet" href="./nav.css">
+    <script defer src="./nav.js"></script>
+    <link rel="stylesheet" href="./footer.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">Tour</div>
+            <ul class="links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./destination.html">Destination</a></li>
+                <li><a href="./booking.html" style="text-decoration: underline;">Bookings</a></li>
+                <li><a href="./testimonial.html">Testimonial</a></li>
+                <li><a href="./conditions.html">Conditions</a></li>
+            </ul>
+            <ul class="mini-menu">
+                <button class="show-opt"><i class="ri-menu-line"></i></button>
+            </ul>
+        </nav>
+        <ul class="options options-disp">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./destination.html">Destination</a></li>
+            <li><a href="./booking.html" style="text-decoration: underline;">Bookings</a></li>
+            <li><a href="./testimonial.html">testimonial</a></li>
+            <li><a href="./conditions.html">Conditions</a></li>
+        </ul>
+
+        <div class="slider">
+            <div class="slide">
+                <img src="./images/Tour.jpg" alt="">
+                <div class="slide-content">
+                    <h1>Travel with us</h1>
+                </div>
+            </div>
+        </div>
+        <!-- main section -->
+
+        <div class="booking">
+            <div class="heading">
+                <h1>Fill out the form below to book a tour. We will contact you to finalize the booking.</h1>
+            </div>
+            <form>
+                <div class="personal-info">
+                    <input type="text" placeholder="Name" required autofocus>
+                    <input type="text" placeholder="Pick Up Adress" required>
+                    <input type="email" placeholder="email" required>
+                    <select id="tourist" name="tourist">
+                        <option value="" disabled selected>Select number of adults</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                    <input type="text" placeholder="Phone" pattern="[0-9]{10}">
+                    <select id="tourist" name="tourist">
+                        <option value="" disabled selected>Select number of children (&lt;18)</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+
+                <div class="tour-info">
+                    <h3>Book your first tour (required)</h3>
+                    <div class="tour-input">
+                        <select id="tour" name="tour">
+                            <option value="" disabled selected>Select a Tour</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Amritsar">Amritsar</option>
+                            <option value="Kashmir">Kashmir</option>
+                            <option value="Ladakh">Ladakh</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Kolkota">Kolkota</option>
+                            <option value="Puri">Puri</option>
+                        </select>
+                        <input type="date" placeholder="Date">
+                    </div>
+                </div>
+                <div class="terms-container">
+                    <div class="agree">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to all the terms and conditions</label>
+                    </div>
+                    <a href="/">terms and condition</a>
+                </div>
+
+                <button class="submit" type="submit">Submit</button>
+
+
+
+            </form>
+        </div>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="info-links">
+                <h3>Take A Local</h3>
+                <p>Discover more as you hear fascinating <br>
+                    behind the scene stories. Local trips <br>
+                    and directions play automatically <br>
+                    based on your GPS location.
+                </p>
+                <div class="p-links">
+                    <a href=""><i class="ri-instagram-line"></i></a>
+                    <a href=""><i class="ri-twitter-x-line"></i></a>
+                    <a href=""><i class="ri-linkedin-line"></i></a>
+                </div>
+            </div>
+            <div class="navigation">
+                <h3>Navigation</h3>
+                <ul class="nav-link">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./destination.html">Destination</a></li>
+                    <li><a href="./booking.html">Booking</a></li>
+                    <li><a href="./testimonial.html">Testimonial</a></li>
+                    <li><a href="./condition.html">Conditions</a></li>
+                </ul>
+            </div>
+        </footer>
+
+
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="submision-card">
+        <div class="greet">
+            <h2>Thank You</h2>
+        </div>
+        <div class="message">
+            <img alt="svgImg" <img alt="svgImg"
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9ImZpbGw6I0ZBNTI1MjsiPgogICAgPHBhdGggZD0iTTExLDE2LjRsLTQuNy00LjdsMS40LTEuNGwzLjMsMy4zbDguNC04LjRDMTcuNSwzLjMsMTQuOSwyLDEyLDJDNi41LDIsMiw2LjUsMiwxMnM0LjUsMTAsMTAsMTBzMTAtNC41LDEwLTEwIGMwLTEuOS0wLjUtMy42LTEuNC01LjFMMTEsMTYuNHoiPjwvcGF0aD4KPC9zdmc+" />
+            <p>Your submision has been recived.Please <br> check your email for confirmation</p>
+            <button class="continue">continue</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

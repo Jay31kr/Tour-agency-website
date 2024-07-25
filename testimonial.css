@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.slider {
+    width: 100%;
+    height: 380px;
+    box-shadow: 0 0 3px black;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 380px;
+    transition: transform 1s;
+}
+
+.slide>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-content {
+    /* background-color: transparent; */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* color: rgb(218, 218, 218); */
+
+}
+
+.slide-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: rgb(215, 153, 130);
+}
+
+.testimonial {
+    /* height: auto; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    background-color: #f8f8f8;
+
+}
+
+.test-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+    /* background-color: white; */
+}
+
+.test-heading h1 {
+    font-size: 3.2rem;
+    font-weight: 300;
+    color: orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline 0.1rem orangered;
+}
+
+.test-heading p {
+    color: #666666;
+    font-size: 1.3rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    width: 90%;
+    max-width: 1200px;
+    justify-items: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info h3 {
+    font-size: 1.25rem;
+    color: #ff0000;
+    margin-bottom: 0.25rem;
+}
+
+.info p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.message {
+    margin-top: 0.5rem;
+}
+
+.message p {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 920px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slide-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
